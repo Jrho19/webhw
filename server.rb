@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  redirect 'hw.html'
+  File.read(File.join('public', 'hw.txt'))
 end
